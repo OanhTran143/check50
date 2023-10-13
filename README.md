@@ -1,6 +1,15 @@
-# check50
+// Become familiar with C syntax
+// Learn to debug buggy code
 
-check50 is a testing tool for checking student code. As a student you can use check50 to check your CS50 problem sets or any other Problem sets for which check50 checks exist. check50 allows teachers to automatically grade code on correctness and to provide automatic feedback while students are coding.
+#include <cs50.h>
+#include <stdio.h>
 
-You can find documentation and instructions for writing your own checks at https://cs50.readthedocs.io/projects/check50/.
+int main(void)
+{
+    // Ask for your name and where live
+    string name = get_string("What is your name? ");
+    string location = get_string("Where do you live? ");
 
+    // Say hello
+    printf("Hello, %s, from %s\n", name, location );
+}
